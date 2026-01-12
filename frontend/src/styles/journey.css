@@ -1,0 +1,246 @@
+.exclusive-section {
+  background-color: #fff;
+  padding: 60px 0;
+  font-family: var(--font-family);
+}
+
+/* === HEADER === */
+.exclusive-header {
+  max-width: 1200px;
+  margin: 0 auto 20px;
+  padding: 0 40px;
+}
+
+.exclusive-title {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: var(--highlight-color);
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.exclusive-subheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.exclusive-tabs {
+  display: flex;
+  gap: 24px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.exclusive-tab {
+  cursor: pointer;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  font-weight: 400;
+}
+
+
+.exclusive-tab.active {
+  border-bottom: 2px solid var(--highlight-color);
+  font-weight: 400;
+}
+
+
+.exclusive-explore-link {
+  font-size: 0.9rem;
+  color: var(--highlight-color);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* === CARD CONTAINER === */
+.exclusive-card-container {
+  display: flex;
+  gap: 20px;
+  padding: 0 40px;
+  overflow-x: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.exclusive-card-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* === INDIVIDUAL CARD === */
+.exclusive-card {
+  position: relative;
+  flex: 0 0 270px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  box-shadow: var(--shadow-light);
+  transition: transform 0.3s ease;
+}
+
+/* === TOP OVERLAY === */
+.exclusive-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  z-index: 2;
+
+}
+
+
+.exclusive-badge-wrapper {
+  position: absolute;
+  top: 12px;
+  left: -50px;
+  width: 200px;
+  transform: rotate(-45deg);
+  z-index: 2;
+  pointer-events: auto;
+}
+
+.exclusive-badge {
+  background-color: var(--highlight-color);
+  color: white;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  font-weight: 300;
+  font-family: cursive;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  padding-left: 40px;
+  border-radius: 0 0 6px 6px;
+}
+
+
+/* === HEART === */
+.exclusive-heart {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+.heart-icon {
+  transition: color 0.2s ease;
+  color: black;
+}
+
+.exclusive-heart:hover .heart-icon {
+  color: red;
+}
+
+.heart-icon.filled {
+  color: red;
+}
+
+/* === CONTENT GRADIENT === */
+.exclusive-content {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent 80%);
+  color: #fff;
+  padding: 16px;
+  z-index: 1;
+}
+
+/* === TEXT INSIDE CARD === */
+.exclusive-trip-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.exclusive-trip-desc {
+  font-size: 0.85rem;
+  font-weight: 300;
+  opacity: 0.9;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.exclusive-trip-days {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  opacity: 0.85;
+}
+
+/* === BOTTOM ROW === */
+.exclusive-action-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* === BUTTON === */
+.exclusive-details-btn {
+  background: transparent;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  border: 1px solid #fff;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  transition: all 0.3s ease;
+}
+
+.exclusive-details-btn:hover {
+  background: white;
+  color: black;
+}
+
+/* === PRICE === */
+.exclusive-price {
+  font-size: 0.85rem;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.exclusive-original {
+  text-decoration: line-through;
+  opacity: 0.7;
+  font-weight: 300;
+}
+
+.exclusive-discounted {
+  font-weight: bold;
+  color: white;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .exclusive-header {
+    padding: 0 20px;
+  }
+
+  .exclusive-card-container {
+    padding: 0 20px;
+  }
+
+  .exclusive-card {
+    flex: 0 0 85%;
+    min-width: 270px;
+  }
+}

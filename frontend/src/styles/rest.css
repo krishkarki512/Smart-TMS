@@ -1,0 +1,185 @@
+.resetpass-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.resetpass-container {
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 960px;
+  width: 100%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.resetpass-left {
+  flex: 1;
+  background-color: #fff5d7;
+}
+
+.resetpass-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.resetpass-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+.resetpass-card {
+  width: 100%;
+  max-width: 420px;
+}
+
+.resetpass-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.resetpass-back {
+  cursor: pointer;
+}
+
+.resetpass-steps {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0 10px;
+}
+
+.resetpass-step {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--highlight-color);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.resetpass-step.done {
+  background-color: var(--highlight-color);
+}
+
+.resetpass-line {
+  height: 4px;
+  flex: 1;
+  background-color: #e0e0e0;
+  margin: 0 4px;
+  border-radius: 2px;
+}
+
+.resetpass-line.done {
+  background-color: var(--highlight-color);
+}
+
+.resetpass-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.resetpass-instruction {
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.resetpass-inputgroup {
+  margin-bottom: 15px;
+}
+
+.resetpass-inputgroup label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #555;
+  font-weight: 500;
+}
+
+.resetpass-inputbox {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 10px 12px;
+  border-radius: 6px;
+}
+
+.resetpass-inputbox input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  color: #333;
+}
+
+.resetpass-inputbox svg {
+  cursor: pointer;
+  color: #777;
+}
+
+.resetpass-btn {
+  width: 100%;
+  background-color:var(--highlight-color);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+
+
+.resetpass-signin {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 15px;
+  color: #555;
+}
+
+.resetpass-signin span {
+  color: #e5b640;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 5px;
+  transition: color 0.2s;
+}
+
+@media (max-width: 768px) {
+  .resetpass-container {
+    flex-direction: column;
+  }
+
+  .resetpass-left {
+    display: none;
+  }
+
+  .resetpass-right {
+    width: 100%;
+    padding: 1.5rem;
+  }
+}

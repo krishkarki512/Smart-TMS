@@ -1,0 +1,234 @@
+/* ========== HOME SECTION ========== */
+.home {
+  position: relative;
+  width: 100%;
+  height: 120vh;
+  overflow: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background video */
+.home-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Overlay */
+.home-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Content */
+.home-content {
+  text-align: center;
+  color: white;
+  max-width: 900px;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.home-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.home-subtitle {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 680px;
+  margin: 0 auto 2.5rem;
+}
+
+/* ========== SEARCH BAR ========== */
+.home-search-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.home-search-bar {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 40px;
+  padding: 10px 16px;
+  gap: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Search input */
+.home-search-input {
+  display: flex;
+  align-items: center;
+  flex: 1.5;
+  gap: 6px;
+}
+
+.home-search-input input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  color: #333;
+  width: 100%;
+}
+
+/* Divider between sections */
+.home-divider {
+  width: 1px;
+  height: 32px;
+  background-color: #ccc;
+}
+
+/* Date section */
+.home-date-box {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 6px;
+}
+
+.home-date-field {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+}
+
+.home-calendar-icon {
+  color: #333;
+}
+
+.home-datepicker {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Separator */
+.home-date-separator {
+  color: #999;
+  user-select: none;
+}
+
+/* Search Button */
+.home-search-btn {
+  background-color: #ddb148;
+  color: white;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.3s ease;
+}
+
+.home-search-btn:hover {
+  background-color: #c19a46;
+}
+
+/* Error message */
+.home-error {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ddb148;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1024px) {
+  .home-title {
+    font-size: 2.4rem;
+  }
+
+  .home-subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-search-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding: 14px;
+  }
+
+  .home-divider,
+  .home-date-separator {
+    display: none;
+  }
+
+  .home-search-btn {
+    width: 100%;
+    border-radius: 24px;
+    padding: 12px;
+  }
+
+  .home-error {
+    width: 90%;
+    font-size: 13px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .home-subtitle {
+    font-size: 1rem;
+  }
+
+  .home-search-bar {
+    border-radius: 28px;
+  }
+
+  .home-search-input input {
+    font-size: 13px;
+  }
+}

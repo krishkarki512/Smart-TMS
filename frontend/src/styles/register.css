@@ -1,0 +1,268 @@
+.reg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  min-height: 100vh;
+}
+
+.reg-wrapper {
+  display: flex;
+  background: white;
+  max-width: 950px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: var(--shadow-light);
+  overflow: hidden;
+}
+
+.reg-image {
+  flex: 0 0 450px;
+  background: #eee;
+}
+
+.reg-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reg-form {
+  flex: 1;
+  padding: 40px 30px;
+  background: #fff;
+}
+
+.reg-form h2 {
+  text-align: center;
+  color: var(--highlight-color);
+  margin-bottom: 10px;
+}
+
+.reg-sub {
+  text-align: center;
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.reg-google {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.reg-separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  margin: 20px 0;
+}
+
+.reg-separator::before,
+.reg-separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+  margin: 0 10px;
+}
+
+.reg-input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.reg-input-group input {
+  width: 100%;
+  padding: 12px 40px 12px 40px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.reg-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+}
+
+.reg-eye {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #777;
+}
+
+/* ✅ Terms and Privacy Section */
+.reg-terms {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.reg-checkbox {
+  margin-top: 3px;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  accent-color: var(--highlight-color);
+  cursor: pointer;
+}
+
+.reg-terms-text {
+  color: #555;
+  flex: 1;
+}
+
+.reg-link {
+  color: var(--highlight-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.reg-link:hover {
+  text-decoration: underline;
+}
+
+/* Submit button */
+.reg-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: var(--highlight-color);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.reg-btn:hover {
+  opacity: 0.9;
+}
+
+.reg-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Bottom text */
+.reg-bottom {
+  text-align: center;
+  margin-top: 20px;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.reg-bottom a {
+  color: var(--highlight-color);
+  text-decoration: none;
+}
+
+/* ✅ Responsive adjustments */
+@media (max-width: 768px) {
+  .reg-wrapper {
+    flex-direction: column;
+  }
+
+  .reg-image {
+    display: none; /* ✅ hide image on mobile */
+  }
+
+  .reg-form {
+    padding: 30px 20px;
+  }
+
+  .reg-terms {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .reg-checkbox {
+    margin-top: 0;
+  }
+}
+/* --- MODAL STYLES --- */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-content {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh; /* Limits height on screen */
+    display: flex;
+    flex-direction: column;
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.modal-title {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--highlight-color);
+}
+
+.modal-close-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.modal-body {
+    overflow-y: auto; /* Allows content to scroll */
+}
+
+.modal-text {
+    white-space: pre-wrap; /* Preserves whitespace and wraps lines */
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.6;
+    margin: 0;
+    font-family: inherit; /* Ensures it doesn't look like code */
+}

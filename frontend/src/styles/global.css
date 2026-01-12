@@ -1,0 +1,28 @@
+:root {
+  --primary-color: #007b8a;
+  --primary-dark: #c19a46;
+  --text-color: #333;
+  --bg-color: #f2f2f2;
+  --highlight-color: #ddb148;
+  --color-line:rgb(57, 53, 53);
+ --title-font: 'Amarante', cursive;
+  --font-family: 'Segoe UI', sans-serif;
+  --shadow-light: 0 4px 20px rgba(28, 24, 24, 0.1);
+  --radius: 8px;
+  --spacing: 12px;
+  --transition: 0.3s ease-in-out;
+    --text-color: #333;
+  --underline-height: 2.5px; 
+  --underline-width-percent: 60%;
+}
+
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+}

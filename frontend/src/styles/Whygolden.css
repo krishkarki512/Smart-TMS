@@ -1,0 +1,171 @@
+/* ───── Section wrapper (“card”) ───── */
+.why-golden-section {
+  margin: 0 auto;
+  padding: 80px 50px 100px;
+  background: var(--bg-color);
+  font-family: var(--font-family);
+}
+
+/* ───── Headings & underline ───── */
+.why-golden-title {
+  font-size: 2.2rem;
+  text-align: center;
+  font-weight: 400;
+  color: var(--text-color);
+}
+.why-golden-underline {
+  width: 80px;
+  height: 4px;
+  background: var(--highlight-color);
+  margin: 12px auto 30px;
+  border-radius: 4px;
+}
+
+.why-golden-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+.why-golden-text {
+  flex: 1 1 50%;
+  max-width: 700px;
+}
+.why-golden-image {
+  flex: 1 1 45%;
+  max-width: 500px;
+  position: relative;
+}
+
+.why-golden-subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+.why-golden-description {
+  font-size: 1rem;
+  line-height: 1.7;
+  font-weight: 350;
+  color: #444;
+  margin-bottom: 20px;
+}
+.read-more-btn {
+  background: transparent;
+  border: 2px solid var(--highlight-color);
+  color: var(--highlight-color);
+  font-weight: 500;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: var(--transition);
+  box-shadow: 0 4px 8px rgba(255, 200, 100, 0.15);
+}
+.read-more-btn:hover {
+  background: var(--primary-dark);
+  color: #fff;
+}
+
+/* ───── Image + play icon ───── */
+.why-golden-image img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  object-fit: cover;
+}
+
+
+
+/* ───── Feature cards ───── */
+.why-golden-features {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.feature-box {
+  flex: 1 1 calc(25% - 15px);
+  background: #fff;
+  height: 220px;
+  padding: 28px 24px;
+  text-align: center;
+  border-radius: 20px 20px 14px 14px;
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.06);
+  position: relative;
+  transition: all 0.3s ease;
+}
+.feature-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* golden “base” under each card */
+.feature-box::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;          /* shows 4 px below the card in rest state */
+  height: 8px;           /* thin bar in rest state */
+  border-radius: 0 0 14px 14px;
+  background: var(--highlight-color);
+  z-index: -1;
+  transition: height 0.35s ease, bottom 0.35s ease;
+}
+.feature-box:hover::after,
+.feature-box:focus-visible::after {
+  bottom: 0px;          /* bar drops almost flush with card */
+  height: 8px;          /* bar thickens as card lifts */
+}
+
+.icon-box {
+  width: 48px;
+  height: 48px;
+  background: #e6e6e6;   /* grey square */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;    /* keep slightly rounded corners */
+}
+.feature-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.feature-icon {
+  font-size: 1.6rem;
+  color: var(--highlight-color);
+}
+.feature-title {
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--text-color);
+  line-height: 1.4;
+}
+.feature-desc {
+  font-size: 0.95rem;
+  color: #000;
+  line-height: 1.5;
+}
+
+/* ───── Responsive tweaks ───── */
+@media (max-width: 768px) {
+  .why-golden-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .why-golden-image,
+  .why-golden-text {
+    max-width: 100%;
+  }
+  .why-golden-features {
+    flex-direction: column;
+  }
+  .feature-box {
+    max-width: 100%;
+  }
+}

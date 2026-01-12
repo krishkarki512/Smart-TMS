@@ -1,0 +1,228 @@
+/* Container */
+.bd-container {
+  max-width: 900px; /* increased width for better desktop layout */
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  line-height: 1.5;
+}
+
+/* Alerts */
+.bd-alert {
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+}
+
+.bd-alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.bd-alert-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.bd-alert-warning {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+}
+
+/* Loading text */
+.bd-loading {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Card */
+.bd-card {
+  background: #fff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* stronger shadow */
+  padding: 2.5rem; /* increased padding */
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+/* Additional styling for location card */
+.bd-location-card {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  background-color: #f9faff; /* subtle background */
+  border: 1px solid #dbe5f5; /* subtle border */
+}
+
+/* Title and Button inline container */
+.bd-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* wrap on small screens */
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+/* Optional: prevent button from shrinking */
+.bd-btn-inline {
+  flex-shrink: 0;
+}
+
+/* Titles */
+.bd-title {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+/* Button styles */
+.bd-btn {
+  display: inline-block;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+  user-select: none;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.2s ease;
+  vertical-align: middle;
+}
+
+/* Button hover & focus with scale effect */
+.bd-btn:hover,
+.bd-btn:focus {
+  transform: scale(1.05);
+}
+
+/* Outline info button */
+.bd-btn-outline-info {
+  border: 2px solid #17a2b8;
+  color: #17a2b8;
+}
+
+.bd-btn-outline-info:hover,
+.bd-btn-outline-info:focus {
+  background-color: #17a2b8;
+  color: white;
+}
+
+/* Outline danger button */
+.bd-btn-outline-danger {
+  border: 2px solid #dc3545;
+  color: #dc3545;
+}
+
+.bd-btn-outline-danger:hover,
+.bd-btn-outline-danger:focus {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Primary button */
+.bd-btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  margin-top: 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  user-select: none;
+}
+
+.bd-btn-primary:hover,
+.bd-btn-primary:focus {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Focus outlines for accessibility */
+.bd-btn:focus {
+  outline: 3px solid #0056b3;
+  outline-offset: 2px;
+}
+
+/* Icon inside button */
+.bd-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Lists */
+.bd-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+.bd-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+}
+
+/* Badges */
+.bd-badge {
+  display: inline-block;
+  padding: 0.25rem 0.7rem;
+  font-size: 0.85rem;
+  border-radius: 12px;
+  font-weight: 700;
+  user-select: none;
+  vertical-align: middle;
+}
+
+.bd-badge-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.bd-badge-warning {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+/* Location specific */
+.bd-location-status {
+  margin-top: 0.75rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.bd-coordinates {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Grid for side-by-side on large screens */
+.bd-grid-2col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 900px) {
+  .bd-grid-2col {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+/* Responsive buttons full width on small devices */
+@media (max-width: 600px) {
+  .bd-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

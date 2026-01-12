@@ -1,0 +1,390 @@
+.otp-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-color);
+  padding: 20px;
+}
+
+.otp-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 950px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-light);
+}
+
+.otp-image {
+  width: 50%;
+  background: #eef3f9;
+}
+
+.otp-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.otp-form-card {
+  width: 50%;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.otp-form-card h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+.otp-steps {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.otp-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.otp-step .circle {
+  background: #e2e2e2;
+  color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.otp-step span {
+  margin-top: 5px;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.otp-step.active .circle {
+  background: var(--highlight-color);
+}
+
+.otp-step.active span {
+  color: var(--highlight-color);
+  font-weight: 600;
+}
+
+.otp-step.done .circle {
+  background: #3bb78f;
+}
+
+.otp-step.done span {
+  color: #3bb78f;
+  font-weight: 600;
+}
+
+.otp-line {
+  flex: 1;
+  height: 2px;
+  background: #e2e2e2;
+  margin: 0 5px;
+}
+
+.otp-desc {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.otp-inputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.otp-inputs input {
+  width: 45px;
+  height: 50px;
+  font-size: 1.5rem;
+  text-align: center;
+  border: 1.5px solid #ccc;
+  border-radius: var(--radius);
+  outline: none;
+  transition: border var(--transition);
+}
+
+.otp-inputs input:focus {
+  border-color: var(--highlight-color);
+}
+
+.otp-input-form button {
+  width: 100%;
+  background-color: var(--highlight-color);
+  color: white;
+  border: none;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background-color var(--transition);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.otp-input-form button:hover {
+  background-color: var(--primary-dark);
+}
+
+.otp-resend {
+  margin-top: 15px;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.otp-resend span {
+  color: var(--highlight-color);
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.otp-bottom {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.otp-bottom a {
+  color: var(--highlight-color);
+  margin-left: 5px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .otp-wrapper {
+    flex-direction: column;
+  }
+
+  .otp-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .otp-form-card {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .otp-inputs {
+    justify-content: center;
+  }
+}
+.otp-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-color);
+  padding: 20px;
+}
+
+.otp-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 950px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-light);
+}
+
+.otp-image {
+  width: 50%;
+  background: #eef3f9;
+}
+
+.otp-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.otp-form-card {
+  width: 50%;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.otp-form-card h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+.otp-steps {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.otp-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.otp-step .circle {
+  background: #e2e2e2;
+  color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 0px;
+}
+
+.otp-step span {
+  margin-top: 5px;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.otp-step.active .circle {
+  background: var(--highlight-color);
+}
+
+.otp-step.active span {
+  color: var(--highlight-color);
+  font-weight: 600;
+}
+
+.otp-step.done .circle {
+  background: var(--highlight-color);
+}
+
+.otp-step.done span {
+  color: var(--highlight-color);
+  font-weight: 600;
+}
+
+.otp-line {
+  flex: 1;
+  height: 2px;
+  background: #e2e2e2;
+  margin: 0 5px;
+}
+.otp-line.highlight {
+  background: var(--highlight-color);
+}
+
+.otp-desc {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.otp-inputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.otp-inputs input {
+  width: 45px;
+  height: 50px;
+  font-size: 1.5rem;
+  text-align: center;
+  border: 1.5px solid #ccc;
+  border-radius: var(--radius);
+  outline: none;
+  transition: border var(--transition);
+}
+
+.otp-inputs input:focus {
+  border-color: var(--highlight-color);
+}
+
+.otp-input-form button {
+  width: 100%;
+  background-color: var(--highlight-color);
+  color: white;
+  border: none;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background-color var(--transition);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.otp-input-form button:hover {
+  background-color: var(--primary-dark);
+}
+
+.otp-resend {
+  margin-top: 15px;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.otp-resend span {
+  color: var(--highlight-color);
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.otp-bottom {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.otp-bottom a {
+  color: var(--highlight-color);
+  margin-left: 5px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .otp-wrapper {
+    flex-direction: column;
+  }
+
+  .otp-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .otp-form-card {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .otp-inputs {
+    justify-content: center;
+  }
+}
