@@ -1,0 +1,92 @@
+.itinerary-section {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.itinerary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+
+.itinerary-header h2::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 3px;
+  background-color: #c48b2c; /* Match other underline colors */
+  margin-top: 6px;
+}
+.show-all {
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+
+.itinerary-item {
+  border-top: 1px solid #ddd;
+}
+
+.itinerary-day {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.dropdown-icon {
+  font-size: 1.8rem;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-icon.rotate {
+  transform: rotate(180deg);
+}
+
+.itinerary-details {
+  padding: 15px 0 25px 0;
+  border-bottom: 1px solid #ddd;
+  color: #444;
+}
+
+.itinerary-details p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.features {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 15px;
+}
+
+.features h4 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.features ul,
+.meals ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.features li,
+.meals li {
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.meals h4 {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}

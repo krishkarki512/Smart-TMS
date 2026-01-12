@@ -1,0 +1,295 @@
+.dates-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: var(--font-family);
+}
+
+.dates-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  position: relative;
+}
+
+.dates-title::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--highlight-color);
+  margin-top: 6px;
+}
+
+.dates-filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.filter-dropdown,
+.sort-dropdown {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  min-width: 180px;
+}
+
+.date-card {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  border-radius: 10px;
+  padding: 20px 24px;
+  box-shadow: var(--shadow-light);
+  margin-bottom: 20px;
+  animation: fadeIn 0.4s ease;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.date-left {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+  min-width: 220px;
+}
+
+.date-range {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  color: #6c757d;
+  flex-wrap: wrap;
+}
+
+.date-range strong {
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+.arrow {
+  font-size: 18px;
+  color: #999;
+  align-self: center;
+}
+
+.date-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #444;
+  font-size: 14px;
+}
+
+.date-info p {
+  display: flex;
+  align-items: center;
+}
+
+.date-info svg {
+  margin-right: 6px;
+  font-size: 16px;
+  color: var(--primary-color);
+}
+
+.date-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 10px;
+  flex: 1;
+  max-width: 280px;
+  min-width: 180px;
+}
+
+.discount-badge-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 6px;
+}
+
+.discount-badge {
+  background: #e74c3c;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.price-line {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.discounted-price {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.payment-select {
+  margin-top: 4px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  font-family: inherit;
+  background: transparent;
+}
+
+.confirm-btn {
+  background-color: var(--highlight-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.3s;
+}
+
+.confirm-btn:hover {
+  background-color: #cda03c;
+}
+
+.view-more-wrapper {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.view-more-btn {
+  background: var(--primary-color);
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.view-more-btn:hover {
+  background: #006073;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Redesigned notice for selling fast */
+.notice-box.selling-fast {
+  background: #fff4e5;
+  border: 1px solid #ffa500;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  gap: 6px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  animation: fadeIn 0.3s ease-in;
+}
+
+.notice-box .icon {
+  font-weight: bold;
+  color: #ff8c00;
+  background: #fff0d6;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.sold-out-text {
+  color: red;
+  font-weight: 700;
+  margin-top: 1rem;
+  font-size: 14px;
+  text-align: center;
+  padding: 6px 12px;
+  border: 1px solid #e74c3c;
+  border-radius: 6px;
+  background-color: #fff0f0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .date-card {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .date-left,
+  .date-right {
+    flex: 1 1 100%;
+    max-width: 100%;
+    align-items: flex-start;
+  }
+
+  .date-right {
+    align-items: flex-start;
+  }
+
+  .notice-box.selling-fast {
+    justify-content: flex-start;
+  }
+
+  .sold-out-text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .date-range {
+    gap: 12px;
+  }
+
+  .date-range strong {
+    font-size: 16px;
+  }
+
+  .discount-badge {
+    font-size: 11px;
+    padding: 2px 8px;
+  }
+
+  .discounted-price {
+    font-size: 18px;
+  }
+
+  .confirm-btn {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 0.9rem;
+  }
+}

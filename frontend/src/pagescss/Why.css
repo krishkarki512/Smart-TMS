@@ -1,0 +1,70 @@
+.why-section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.why-title {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.why-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: orange;
+  margin-top: 10px;
+}
+
+/* Always 2 columns (2x2 layout) */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* Stack to 1 column on small screens */
+@media (max-width: 600px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.why-card {
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+}
+
+.why-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.why-content {
+  padding: 15px;
+}
+
+.why-content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.why-content p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #444;
+}

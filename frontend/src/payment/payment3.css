@@ -1,0 +1,456 @@
+.payment3-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2.5rem 1rem;
+  font-family: sans-serif;
+  color: #111;
+}
+
+.payment-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.notice-box {
+  display: flex;
+  background: #fff6e5;
+  border-left: 8px solid #e0b03b;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+}
+
+.notice-icon { 
+  background: #f4d35e;
+  border-radius: 50%;
+  padding: 6px 10px;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.payment-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.payment-left {
+  flex: 1 1 350px;
+  min-width: 320px;
+}
+
+.review-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+}
+
+.section-heading {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1.5rem 0 0.8rem;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.card-logos {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.mastercard {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #eb001b;
+}
+
+.card-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-form label {
+  font-size: 0.95rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-form input {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 8px 0;
+  font-size: 1rem;
+  background: transparent;
+  outline: none;
+}
+
+.card-form input:focus {
+  border-color: #1a1f71;
+}
+
+.card-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.promo-code-btn {
+  margin-top: 0.5rem;
+  padding: 6px 12px;
+  border: 1px solid #000;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  border-radius: 4px;
+}
+
+.checkboxes {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 0.95rem;
+  line-height: 2;
+}
+
+.checkboxes label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #222;
+  width: auto;
+}
+.checkboxes input[type="checkbox"] {
+  margin-top: 0;
+  margin-right: 10px;
+}
+
+.checkboxes a {
+  color: #d6006d;
+  text-decoration: none;
+}
+
+.checkboxes a:hover {
+  text-decoration: underline;
+}
+
+.required {
+  color: red;
+  font-weight: bold;
+}
+
+.booking-summary {
+  flex: 0 0 350px;
+  min-width: 300px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 1.5rem;
+  align-self: flex-start;
+}
+
+.booking-summary h3 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.trip-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+
+.duration {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.details p {
+  margin-bottom: 1rem;
+}
+
+.summary-dropdown {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 0;
+  cursor: pointer;
+  border-top: 1px solid #ddd;
+}
+
+.dropdown-content {
+  padding: 0.6rem 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.total.breakdown {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 0.8rem 0;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.final-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.pay-now {
+  color: #1a1f71;
+}
+
+.how-to-credit {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.info-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.info-boxes div {
+  flex: 1 1 300px;
+  background: #f9f9f9;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn-back,
+.btn-paynow {
+  padding: 0.7rem 1.3rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-back {
+  background: #e0e0e0;
+}
+
+.btn-paynow {
+  background: #000;
+  color: #fff;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.footer-links a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* === Terms and Agreements Section === */
+.terms-checkboxes {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.terms-checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #222;
+  width: 100%;
+}
+
+.terms-checkbox-label input[type="checkbox"] {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: 4px;
+  accent-color: var(--primary-color); 
+  cursor: pointer;
+}
+
+.terms-checkbox-label span {
+  flex: 1;
+  line-height: 1.6;
+}
+
+.terms-checkbox-label a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.terms-checkbox-label a:hover {
+  text-decoration: underline;
+}
+
+.required {
+  color: red;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+.payment-options-row {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1.5rem 0 2rem 0;
+  flex-wrap: wrap;
+}
+.payment-option-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 1rem 2.2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  cursor: pointer;
+  transition: border 0.2s, box-shadow 0.2s, background 0.2s, color 0.2s;
+  min-width: 180px;
+  margin-bottom: 10px;
+  outline: none;
+}
+.payment-option-btn.selected,
+.payment-option-btn:focus {
+  border-color: #d6006d;
+  background: #f9e6f0;
+  color: #d6006d;
+  box-shadow: 0 4px 16px rgba(214,0,109,0.08);
+}
+.payment-option-btn:hover {
+  border-color: #1a1f71;
+  background: #f4f8ff;
+  color: #1a1f71;
+}
+.payment-option-btn svg {
+  font-size: 1.5rem;
+  margin-right: 8px;
+}
+
+/* Cash payment button */
+.btn-cash {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #1aaf5d;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem 2.2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  box-shadow: 0 2px 12px rgba(26,175,93,0.10);
+  margin-top: 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.btn-cash:disabled,
+.btn-cash[aria-disabled="true"] {
+  background: #b3e6c7;
+  color: #fff;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+.btn-cash svg {
+  font-size: 1.3rem;
+  margin-right: 6px;
+}
+
+.stripe-form .stripe-pay-btn {
+  background: linear-gradient(90deg, #5ac8fa 0%, #4f8cff 100%);
+  color: #fff;
+  border: 2px solid #4f8cff;
+  border-radius: 7px;
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  box-shadow: 0 2px 10px rgba(90,200,250,0.13);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  letter-spacing: 0.01em;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.06);
+}
+.stripe-form .stripe-pay-btn:hover:not(:disabled) {
+  background: linear-gradient(90deg, #4f8cff 0%, #5ac8fa 100%);
+  box-shadow: 0 6px 18px rgba(90,200,250,0.18);
+  transform: scale(1.025);
+  border-color: #4f8cff;
+}
+.stripe-form .stripe-pay-btn:active {
+  transform: scale(0.97);
+}
+.stripe-form .stripe-icon {
+  font-size: 1.1rem;
+  color: #4f8cff;
+  background: #eaf6ff;
+  border-radius: 50%;
+  padding: 3px 6px;
+  margin-right: 6px;
+  box-shadow: 0 1px 4px rgba(90,200,250,0.10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .payment-main {
+    flex-direction: column;
+  }
+  .form-actions {
+    flex-direction: column;
+  }
+  .btn-back,
+  .btn-paynow {
+    width: 100%;
+  }
+}

@@ -1,0 +1,115 @@
+/* MAIN CONTAINER */
+.purpose-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+  padding: 60px 30px;
+  gap: 50px;
+  margin: auto;
+}
+
+/* ICON */
+.purpose-icon img {
+  width: 160px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* TEXT AREA */
+.purpose-text {
+  max-width: 650px;
+}
+
+.purpose-subheading {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
+
+.purpose-heading {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-color);
+  margin-bottom: 25px;
+  line-height: 1.55;
+}
+
+/* BUTTON */
+.purpose-button {
+  padding: 10px 24px;
+  background-color: white;
+  border: 1px solid var(--text-color);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.purpose-button:hover {
+  background-color: var(--primary-dark);
+  color: white;
+  border-color: var(--primary-dark);
+}
+
+/* RESPONSIVE — TABLETS */
+@media (max-width: 900px) {
+  .purpose-container {
+    padding: 50px 25px;
+    gap: 35px;
+  }
+
+  .purpose-heading {
+    font-size: 1.45rem;
+  }
+
+  .purpose-icon img {
+    width: 130px;
+  }
+}
+
+/* RESPONSIVE — MOBILE */
+@media (max-width: 600px) {
+  .purpose-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+    gap: 25px;
+  }
+
+  .purpose-icon img {
+    width: 110px;
+  }
+
+  .purpose-text {
+    max-width: 100%;
+  }
+
+  .purpose-heading {
+    font-size: 1.25rem;
+    line-height: 1.45;
+  }
+
+  .purpose-subheading {
+    font-size: 0.75rem;
+  }
+
+  .purpose-button {
+    font-size: 0.85rem;
+    padding: 8px 20px;
+  }
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 380px) {
+  .purpose-heading {
+    font-size: 1.1rem;
+  }
+
+  .purpose-icon img {
+    width: 95px;
+  }
+}

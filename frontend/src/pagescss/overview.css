@@ -1,0 +1,50 @@
+.overview-section {
+  background-color: #fff;
+  padding: 40px 24px;
+  margin: 0px auto;
+  max-width: 1000px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+/* Section Title */
+.overview-section h2 {
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 16px;
+  font-weight: 300;
+}
+
+/* Decorative Underline */
+.overview-section .underline.gold {
+  width: 80px;
+  height: 4px;
+  background-color: var(--highlight-color);
+  margin: 0 auto 20px auto;
+  border-radius: 2px;
+}
+
+/* Description Paragraph */
+.overview-section p {
+  color: var(--text-color);
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.8;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+  .overview-section {
+    padding: 24px 16px;
+  }
+
+  .overview-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .overview-section p {
+    font-size: 1rem;
+  }
+}

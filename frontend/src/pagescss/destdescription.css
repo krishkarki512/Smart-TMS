@@ -1,0 +1,20 @@
+.breadcrumb {
+  font-size: 0.9rem;
+  padding-left: 1rem;
+  color: #666;
+}
+
+.breadcrumb a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb span {
+  color: var(--primary-color);
+  font-weight: 500;
+}

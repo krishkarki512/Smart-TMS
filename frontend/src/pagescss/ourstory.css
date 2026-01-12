@@ -1,0 +1,83 @@
+.our-story-section {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  padding: 4rem 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.our-story-title {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.our-story-title h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.our-story-title .underline {
+  width: 60px;
+  height: 3px;
+  background-color: #f5a623;
+  margin: 0 auto;
+}
+
+.our-story-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.image-side {
+  flex: 1;
+  min-width: 300px;
+}
+
+.image-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.text-side {
+  flex: 1.2;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.read-more-btn {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #f5a623;
+  color: black;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.read-more-btn:hover {
+  background-color: #e6971d;
+}
+
+/* Optional responsive tweaks */
+@media (max-width: 768px) {
+  .our-story-content {
+    flex-direction: column;
+  } 
+
+  .read-more-btn {
+    align-self: center;
+  }
+}

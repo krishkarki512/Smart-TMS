@@ -1,0 +1,132 @@
+:root {
+  --primary-color: #1a73e8;
+  --text-color: #333;
+  --muted-text: #777;
+  --bg-light: #f9f9f9;
+  --border-radius: 8px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Blog Container */
+.blog-detail-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: var(--shadow);
+  border-radius: var(--border-radius);
+}
+
+/* Title */
+.blog-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+/* Author Info */
+.blog-author-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.blog-author-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.blog-author-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+/* Thumbnail */
+.blog-thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  margin-bottom: 1.5rem;
+}
+
+/* Blog Content */
+.blog-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+/* Tags */
+.blog-tags {
+  margin-top: 1.5rem;
+}
+
+.blog-tag {
+  display: inline-block;
+  background: var(--bg-light);
+  color: var(--muted-text);
+  padding: 4px 10px;
+  margin-right: 6px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* Comments */
+.comments-section {
+  margin-top: 2rem;
+  border-top: 1px solid #eee;
+  padding-top: 2rem;
+}
+
+.comment-card {
+  background: var(--bg-light);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.comment-author {
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.comment-text {
+  margin-top: 0.5rem;
+  color: var(--text-color);
+}
+
+/* View All Button */
+.view-all-region-btn {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.view-all-region-btn:hover {
+  background: #0f5bd6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .blog-title {
+    font-size: 1.75rem;
+  }
+
+  .blog-author-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,163 @@
+.review-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.review-title-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.review-title {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.review-underline {
+  width: 60px;
+  height: 3px;
+  background-color: var(--highlight-color, #d4af37);
+  border-radius: 2px;
+  margin-left: 20px;
+}
+
+/* --- REVIEW TOP SUMMARY --- */
+.review-top-summary {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  margin-bottom: 40px;
+  color: #000;
+  white-space: nowrap; 
+  width: 100%;
+  max-width: none;
+}
+
+.review-top-summary .stars {
+  display: flex !important;
+  gap: 2px;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.average-rating,
+.total-reviews {
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
+  font-weight: 600;
+}
+
+.average-rating {
+  font-size: 17px;
+  margin-left: 4px;
+}
+
+.total-reviews {
+  font-size: 15px;
+  color: #444;
+  margin-left: 6px;
+}
+
+/* --- REVIEW CONTENT WRAPPER --- */
+.review-content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+/* Sidebar Filters */
+.review-filters {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.review-filters h4 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.rating-filter-option {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.checkbox-column {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.stars-column {
+  width: 100px;
+  display: flex;
+  gap: 2px;
+  justify-content: flex-start;
+}
+
+.count-column {
+  width: 30px;
+  text-align: right;
+  font-size: 13px;
+  color: #888;
+}
+
+/* Review Cards */
+.review-list {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.review-card {
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  font-size: 15px;
+  color: #333;
+}
+
+.review-card .stars {
+  display: flex;
+  gap: 1px;
+  margin-bottom: 5px;
+}
+
+.review-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.review-meta {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  font-size: 14px;
+  color: #d00;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.review-date {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 5px;
+}
